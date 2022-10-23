@@ -1,0 +1,46 @@
+server:
+  port: 7676
+  servlet:
+    context-path: /
+  shutdown: graceful
+  http:
+    port: 7676
+
+spring:
+  config:
+    activate:
+      on-profile: local
+  ############################################################
+  # DataSource 설정
+  ############################################################
+
+  ############################################################
+  # Rabbitmq 설정
+  ############################################################
+  rabbitmq:
+    host: 192.168.1.24
+    port: 5672
+    username: dms
+    password: aistudio1@
+    virtual-host: dms
+    ssl:
+      enabled: true
+
+#  session:
+#    store-type: jdbc
+#    jdbc:
+#      initialize-schema: always
+aistudio:
+  tool:
+    imageServer: http://image.aistudio.co.kr/aistudio
+
+#  ############################################################
+#  # Restful Client Configuration
+#  ############################################################
+#  restTemplate:
+#    factory:
+#      readTimeout: 60000
+#      connectTimeout: 60000
+#    httpClient:
+#      maxConnTotal: 100
+#      maxConnPerRoute: 5
