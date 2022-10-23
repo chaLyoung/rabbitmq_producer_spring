@@ -18,11 +18,11 @@ spring:
   # Rabbitmq 설정
   ############################################################
   rabbitmq:
-    host: 192.168.1.24
-    port: 5672
-    username: dms
-    password: aistudio1@
-    virtual-host: dms
+    host: host here
+    port: port here
+    username: name here
+    password: password here
+    virtual-host: vhost here
     ssl:
       enabled: true
 
@@ -30,9 +30,6 @@ spring:
 #    store-type: jdbc
 #    jdbc:
 #      initialize-schema: always
-aistudio:
-  tool:
-    imageServer: http://image.aistudio.co.kr/aistudio
 
 #  ############################################################
 #  # Restful Client Configuration
